@@ -11,62 +11,77 @@ import { FaPinterestP } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className='w-full'>
-        <div className='w-full mx-auto mt-[100px] p-20 bg-[#2C2C2C] text-white font-semibold text-2xl  xl:flex xl:justify-center lg:gap-[60px] '>
-              <div>
-                <img className='ml-[90px] h-[100px]' src={footerlogo} alt="" />
-              </div>
-
-
-              <div className='ml-[90px] mt-[90px]'>
-                <h1>Information</h1>
-                <ul>
-                  <li className='mt-5'>Main</li>
-                  <li className='mt-5'>Gallery</li>
-                  <li className='mt-5'>Projects</li>
-                  <li className='mt-5'>Certifications</li>
-                  <li className='mt-5'>Contacts</li>
-                </ul>
-
-              </div>
-
-              <div className='ml-[90px] mt-[100px]'>
-                <h1>Contacts</h1>
-                  <div className='flex gap-5 mt-10'>
-                    <CiLocationOn/>
-                    <p>1234 Sample street<br/>Austin Texas 78704</p> 
-                 
-                  </div>
-
-                  <div className='flex gap-5 mt-[50px]'>
-                    <FaPhone/>
-                    <p>512.333.2222</p>
-                  </div>
-
-                  <div  className='flex gap-5 mt-[30px]'>
-                    <MdOutlineEmail className='mt-2' />
-                    <p>sampleemail@gmail.com</p>
-                  </div>
-              </div>
-
-              <div className='ml-[90px] mt-[100px]'>
-                <p>Social Media</p>
-                <div className='flex gap-10 mt-10'>
-                <FaFacebookF />
-                <FaTwitter/>
-                <BsLinkedin/>
-                <FaPinterestP/>
-              </div>
-         </div>
+    <div className="w-full">
+      <div className="w-full mx-auto mt-20 p-8 md:p-12 bg-[#2C2C2C] text-white font-semibold text-lg xl:flex xl:justify-center xl:gap-[200px]">
+        <FooterLogo />
+        <FooterLinks />
+        <FooterContacts />
+        <FooterSocialMedia />
       </div>
-
-     
-
-      <div className='bg-[#2C2C2C] text-center text-white border-t border-[#C8C8C880] p-[40px]'>
-        <p className='text-[#C8C8C880]'>© 2021 All Rights Reserved</p>
+      <div className="bg-[#2C2C2C] text-center text-white border-t border-[#C8C8C880] p-4">
+        <p className="text-[#C8C8C880]"> 2021 All Rights Reserved</p>
       </div>
     </div>
-  )
+  );
 }
 
-export default Footer
+function FooterLogo() {
+  return (
+    <div className="flex justify-center xl:justify-start">
+      <img className="h-20" src={footerlogo} alt="" />
+    </div>
+  );
+}
+
+function FooterLinks() {
+  return (
+    <div className="mt-8 xl:mt-0">
+      <h1>Information</h1>
+      <ul>
+        <li className="mt-4">Main</li>
+        <li className="mt-4">Gallery</li>
+        <li className="mt-4">Projects</li>
+        <li className="mt-4">Certifications</li>
+        <li className="mt-4">Contacts</li>
+      </ul>
+    </div>
+  );
+}
+
+function FooterContacts() {
+  return (
+    <div className="mt-8 xl:mt-0">
+      <h1>Contacts</h1>
+      <div className="flex gap-4 mt-4">
+        <CiLocationOn />
+        <p>1234 Sample street<br />Austin Texas 78704</p>
+      </div>
+      <div className="flex gap-4 mt-8">
+        <FaPhone />
+        <p>512.333.2222</p>
+      </div>
+      <div className="flex gap-5 mt-4">
+        <MdOutlineEmail className="mt-1" />
+        <p>sampleemail@gmail.com</p>
+      </div>
+    </div>
+  );
+}
+
+function FooterSocialMedia() {
+  return (
+    <div className="mt-8 xl:mt-0">
+      <p>Social Media</p>
+      <div className="flex gap-10 mt-4">
+        <FaFacebookF />
+        <FaTwitter />
+        <BsLinkedin />
+        <FaPinterestP />
+      </div>
+    </div>
+  );
+}
+
+export default Footer;
+
+

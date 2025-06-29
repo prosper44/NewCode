@@ -11,33 +11,27 @@ import gallery8 from '../assets/gallery8.jpg'
 import gallery9 from '../assets/gallery9.jpg'
 
 
-const Gallery = () => {
+function Gallery() {
   return (
-    <div>
-      <div className='mt-[180px]'>
-        <div className='ml-[100px]'>
-              <h1 className='text-[100px] leading-[20px] text-[#BDBDBD]'>Photo</h1>
-              <h1 className='text-[100px] font-bold'>Gallery</h1>
-        </div>
-
-        <div className='grid grid-cols-2 gap-5 ml-[100px] md:grid md:grid-cols-2 md:gap-5 md:ml-[200px] lg:grid lg:grid-cols-3 lg:ml-[200px] lg:gap-5  xl:grid xl:grid-cols-5 xl:gap-5 xl:ml-[100px]    '>
-            <img className='w-[255px] h-[330px]' src={gallery1} alt="" />
-            <img className='w-[255px] h-[330px]' src={gallery1} alt="" />
-            <img className='w-[255px] h-[330px]' src={gallery2} alt="" />
-            <img className='w-[255px] h-[330px]' src={gallery3} alt="" />
-            <img className='w-[255px] h-[330px]' src={gallery4} alt="" />
-            <img className='w-[255px] h-[330px]' src={gallery5} alt="" />
-            <img className='w-[255px] h-[330px]' src={gallery6} alt="" />
-            <img className='w-[255px] h-[330px]' src={gallery7}alt="" />
-            <img className='w-[255px] h-[330px]' src={gallery8} alt="" />
-            <img className='w-[255px] h-[330px]' src={gallery9} alt="" />
-            
-            
-
-        </div>
+    <div className="mt-20">
+      <div className="ml-10 lg:ml-20">
+        <h1 className="text-5xl lg:text-8xl leading-tight text-[#BDBDBD]">Photo</h1>
+        <h1 className="text-5xl lg:text-8xl font-bold">Gallery</h1>
+      </div>
+      <div className="grid grid-cols-1 gap-5 mx-auto lg:grid-cols-3 xl:grid-cols-5 p-5">
+        <img className="w-full h-auto" src={gallery1} alt="" />
+        <img className="w-full h-auto" src={gallery1} alt="" />
+        <img className="w-full h-auto" src={gallery2} alt="" />
+        <img className="w-full h-auto" src={gallery3} alt="" />
+        <img className="w-full h-auto" src={gallery4} alt="" />
+        <img className="w-full h-auto" src={gallery5} alt="" />
+        <img className="w-full h-auto" src={gallery6} alt="" />
+        <img className="w-full h-auto" src={gallery7} alt="" />
+        <img className="w-full h-auto" src={gallery8} alt="" />
+        <img className="w-full h-auto" src={gallery9} alt="" />
       </div>
     </div>
-  )
+  );
 }
 
-export default Gallery
+export default Gallery;

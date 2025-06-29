@@ -53,8 +53,8 @@ const Main = () => {
       </div>
 
       <div className='mt-40'>
-        <h1 className='ml-[90px] lg:flex justify-center text-[#BDBDBD] text-[50px] lg:text-[70px] '>Main Focus/Mission Statement</h1>
-        <div className='ml-[90px] sm:ml-[166px] xl:flex xl:gap-[100px] xl:justify-center'>
+        <h1 className='ml-[100px] text-center lg:text-[70px]  text-[#BDBDBD] text-[50px]  '>Main Focus/Mission Statement</h1>
+        <div className='ml-[100px] md:flex md:gap-5 md:justify-center items-center lg:flex lg:gap-10 lg:justify-center lg:items-center'>
             <div className='flex '>
                  <div><h1 className='font-extrabold text-[#F2F2F2] text-[200px]  lg:text-[290px]'>1</h1></div> 
                  <div className='mt-[100px] lg:mt-[130px] text-[20px] lg:text-[25px] xl:text-w-[33px] ml-10 '><p>Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit.<br/> Sed efficitur, lectus et<br/> facilisis placerat.</p></div>
@@ -62,7 +62,7 @@ const Main = () => {
 
             <div className='flex '>
                  <div><h1 className='font-extrabold text-[#F2F2F2] text-[200px] lg:text-[290px]'>2</h1></div> 
-                 <div className='mt-[100px] lg:mt-[130px] text-[20px] lg:text-[25px] xl:text-[33px] ml-10 '><p>Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit.<br/> Sed efficitur, lectus et<br/> facilisis placerat.</p></div>
+                 <div className='mt-[100px] lg:mt-[130px] text-[20px] lg:text-[25px] xl:text-w-[33px] ml-10 '><p>Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit.<br/> Sed efficitur, lectus et<br/> facilisis placerat.</p></div>
             </div>
           </div>
       </div>
