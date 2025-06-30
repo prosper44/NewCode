@@ -12,7 +12,7 @@ import { FaPinterestP } from "react-icons/fa";
 function Footer() {
   return (
     <div className="w-full">
-      <div className="w-full mx-auto mt-20 p-8 md:p-12 bg-[#2C2C2C] text-white font-semibold text-lg flex flex-col xl:flex-row xl:justify-center xl:gap-[200px] gap-10 items-start">
+      <div className=" w-full mx-auto mt-20 p-8 md:p-12 bg-[#2C2C2C] text-white font-semibold text-lg flex flex-col xl:flex-row xl:justify-center xl:gap-[200px] gap-10 items-start">
         <FooterLogo />
         <FooterLinks />
         <FooterContacts />

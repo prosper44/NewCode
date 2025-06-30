@@ -8,15 +8,10 @@ export default {
     extend: {},
   },
   plugins: [],
-
   safelist: [
-  'flex',
-  'flex-col',
-  'flex-row',
-  'gap-10',
-  'xl:flex',
-  'xl:flex-row',
-  'xl:gap-[200px]',
-  'items-start'
-]
+    'flex', 'flex-col', 'flex-row',
+    'gap-10', 'xl:flex', 'xl:flex-row',
+    'xl:gap-[200px]', 'items-start',
+    'justify-center', 'text-white'
+  ],
 }
