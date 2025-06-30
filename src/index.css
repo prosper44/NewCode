@@ -3,6 +3,3 @@
 @tailwind components;
 @tailwind utilities;
 
-@theme {
-    --font-roboto:'Roboto','sans-serif'
-}
